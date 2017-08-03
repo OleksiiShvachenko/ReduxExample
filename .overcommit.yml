@@ -31,3 +31,11 @@
 #
 #  IndexTags:
 #    enabled: true # Generate a tags file with `ctags` each time HEAD changes
+
+PostCheckout:
+  CocoapodsInstall:
+    enabled: true
+    description: 'Install cocoapods dependencies'
+    requires_files: true
+    required_executable: 'pod'
+    flags: ['install']
